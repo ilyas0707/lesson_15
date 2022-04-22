@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <select name="select" id="select">
+                <option value="empty"></option>
+            </select>
+        
+            <form action="POST" id="form">
+                <input class="input" type="text" name="name" placeholder="Имя">
+                <input class="input" type="text" name="surname" placeholder="Фамилия">
+                <input class="input" type="number" name="salary" placeholder="Зарплата">
+                <button id="create">Создать</button>
+                <button id="update">Изменить</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="employee">
+        <div class="container">
+            <div class="block" id="block"></div>
+        </div>
+    </div>
+    
+    <!-- <script src="js/script.js"></script> -->
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
